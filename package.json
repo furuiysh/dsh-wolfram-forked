@@ -1,0 +1,16 @@
+{
+  "name": "dsh-wolfram",
+  "version": "0.1.0",
+  "description": "Call Wolfram Mathematica from DeepSeek Harness",
+  "type": "module",
+  "main": "index.js",
+  "files": ["index.js", "cordis.patch.yml"],
+  "keywords": ["dsh", "dsh-plugin", "mathematica", "wolfram"],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}
