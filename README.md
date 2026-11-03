@@ -41,7 +41,7 @@ Examples:
 - limit: `Limit[Sin[x]/x, x -> 0]` → `1`
 - series: `Series[Exp[x], {x, 0, 3}]` → `1 + x + x^2/2 + x^3/6 + O[x]^4`
 
-## How it works
+## How it works(on dsh)
 
 The plugin uses Node's built-in `child_process` module to run `wolframscript -code <expression>` and captures the standard output. It has no npm dependencies.
 
