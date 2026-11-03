@@ -12,9 +12,23 @@ wolframscript -code "Integrate[Cos[x], x]"
 
 ## Install
 
+This plugin is not published to npm. Install it from the fork's GitHub repository:
+
 ```sh
-dsh plugin --profile web add dsh-wolfram
+dsh plugin --profile desktop add github:furuiysh/dsh-wolfram-forked
 ```
+
+Replace `desktop` with the profile you actually run — `desktop` is the DeepSeek Harness desktop app, `web` is a `dsh web` profile.
+
+## Compatibility
+
+The plugin supports DSH 0.1.x and the 0.2.x line, including `0.2.1-rc.5` and the `0.2.2-alpha` prereleases. Its declared `peerDependencies` range is:
+
+```text
+>=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 || >=0.2.1-rc.1 <0.3.0-0
+```
+
+DSH refuses to install a plugin whose `@deepseek-ai/dsh-tools` requirement does not match the running runtime (it is a hard rejection, not a warning). The 0.3.x line is untested and deliberately not claimed.
 
 ## Usage
 
