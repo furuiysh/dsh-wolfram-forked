@@ -1,4 +1,4 @@
-# dsh-wolfram frsb
+# dsh-wolfram
 
 Call [Wolfram Mathematica](https://www.wolfram.com/mathematica/) (or the free [Wolfram Engine](https://www.wolfram.com/engine/)) from [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). It registers a `wolfram` tool that runs Mathematica code through `wolframscript` and returns the result.
 
